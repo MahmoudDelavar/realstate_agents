@@ -1,4 +1,4 @@
-const Agentss = () => {
+const Agents = () => {
   return (
     <>
       <h1>صفحه نماینده ها</h1>
@@ -6,4 +6,4 @@ const Agentss = () => {
   );
 };
 
-export default Agentss;
+export default Agents;
