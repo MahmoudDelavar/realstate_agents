@@ -4,18 +4,34 @@ import Search from "./components/search/search";
 import Agents from "./components/agents/agents";
 import MyAds from "./components/myAds/myAds";
 import Profile from "./components/profile/profile";
+import Lastsearch from "./components/lastSearch/lastSearch";
+import Bookmarked from "./components/bookmarked/bookmarked";
+import Sidebar from "./components/sidebar/sidebar";
 
 //====================================================
 const App = () => {
   return (
     <>
-      <Navbar />
-      <Routes>
-        <Route exaxt path="/search" element={<Search />} />
-        <Route exaxt path="/agents" element={<Agents />} />
-        <Route exaxt path="/myAds" element={<MyAds />} />
-        <Route exaxt path="/profile" element={<Profile />} />
-      </Routes>
+      <div className="container-floid">
+        <div className="row">
+          <Navbar />
+        </div>
+        <div className="row align-items-center ">
+          <div className="col  d-none d-lg-block">
+            <Sidebar />
+          </div>
+          <div className="col text-center ">
+            <Routes>
+              <Route exaxt path="/search" element={<Search />} />
+              <Route exaxt path="/agents" element={<Agents />} />
+              <Route exaxt path="/myAds" element={<MyAds />} />
+              <Route exaxt path="/profile" element={<Profile />} />
+              <Route exaxt path="/bookmarked" element={<Bookmarked />} />
+              <Route exaxt path="/lastSearch" element={<Lastsearch />} />
+            </Routes>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

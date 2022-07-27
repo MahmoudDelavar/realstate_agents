@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const TopNavbar = () => {
   return (
     <>
-      <Navbar expand="lg" bg="dark" variant="dark">
+      <Navbar className="d-lg-none" expand="sm" bg="dark" variant="dark">
         <Container>
           <Navbar.Brand href="/home">املاک هاشمی</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
