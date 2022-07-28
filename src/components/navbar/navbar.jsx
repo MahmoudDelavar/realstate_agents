@@ -1,34 +1,59 @@
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
+import { FiUsers, FiSearch, FiUserCheck, FiFileText } from "react-icons/fi";
+import "./style.css";
+import { useEffect } from "react";
 
 //====================================================
 const TopNavbar = () => {
+  useEffect(() => {
+    const list = document.querySelectorAll(".list");
+    function activLink() {
+      list.forEach((item) => item.classList.remove("active"));
+      this.classList.add("active");
+    }
+    list.forEach((item) => item.addEventListener("click", activLink));
+  });
   return (
     <>
-      <Navbar className="d-lg-none" expand="sm" bg="dark" variant="dark">
-        <Container>
-          <Navbar.Brand href="/home">املاک هاشمی</Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto">
-              <Link className="nav-link" to="/search">
-                جسنجو
+      <div className=" container-floid main d-lg-none">
+        <div className="navbar">
+          <ul className="">
+            <li className="list active">
+              <Link className="link" to="/search">
+                <span className="icon">
+                  <FiSearch />
+                </span>
+                <span className="text">جستجو</span>
               </Link>
-              <Link className="nav-link" to="/myAds">
-                آگهی های من
+            </li>
+            <li className="list">
+              <Link className="link" to="/myAds">
+                <span className="icon">
+                  <FiFileText />
+                </span>
+                <span className="text">آگهی های من</span>
               </Link>
-              <Link className="nav-link" to="/agents">
-                نماینده ها
+            </li>
+            <li className="list">
+              <Link className="link" to="/agents">
+                <span className="icon">
+                  <FiUserCheck />
+                </span>
+                <span className="text">نمایده ها</span>
               </Link>
-              <Link className="nav-link" to="/profile">
-                پروفایل
+            </li>
+            <li className="list">
+              <Link className="link" to="/profile">
+                <span className="icon">
+                  <FiUsers />
+                </span>
+                <span className="text">پروفایل</span>
               </Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+            </li>
+            <div className="indicator"></div>
+          </ul>
+        </div>
+      </div>
     </>
   );
 };

@@ -1,0 +1,54 @@
+.sidebar {
+  background: #5caffd;
+}
+img {
+  max-width: 30px;
+  height: 170px;
+}
+li {
+  list-style: none;
+}
+.s-list {
+  padding: 3px;
+  margin-top: 40px;
+  border-radius: 15px;
+  width: 100%;
+  border: 1px solid whitesmoke;
+}
+.s-icon {
+  font-size: 2rem;
+  transition: 0.5s;
+  color: whitesmoke;
+}
+
+.s-text {
+  color: whitesmoke;
+  position: absolute;
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin-top: 15px;
+  margin-right: 5px;
+}
+
+.s-list:hover {
+  background: red;
+  transition: 0.5s;
+}
+
+.indicator {
+  position: absolute;
+  top: -30%;
+  right: 45px;
+  width: 80px;
+  height: 80px;
+  background-color: rgb(216, 118, 53);
+  border-radius: 50px;
+  border: 6px solid whitesmoke;
+  transition: 0.5s;
+}
+
+.star {
+  text-align: center;
+  color: rgb(255, 136, 0);
+  font-size: 30px;
+}

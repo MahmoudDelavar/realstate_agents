@@ -1,7 +1,7 @@
 const Search = () => {
   return (
     <>
-      <h1>صفخه جستجو</h1>
+      <h1 className="a">صفخه جستجو</h1>
     </>
   );
 };
