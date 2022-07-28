@@ -13,7 +13,6 @@ li {
   margin-top: 40px;
   border-radius: 15px;
   width: 100%;
-  border: 1px solid whitesmoke;
 }
 .s-icon {
   font-size: 2rem;
@@ -31,20 +30,9 @@ li {
 }
 
 .s-list:hover {
-  background: red;
+  background: rgb(173, 121, 121);
   transition: 0.5s;
-}
-
-.indicator {
-  position: absolute;
-  top: -30%;
-  right: 45px;
-  width: 80px;
-  height: 80px;
-  background-color: rgb(216, 118, 53);
-  border-radius: 50px;
-  border: 6px solid whitesmoke;
-  transition: 0.5s;
+  color: black;
 }
 
 .star {
