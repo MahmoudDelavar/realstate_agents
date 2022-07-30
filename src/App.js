@@ -7,19 +7,20 @@ import Profile from "./components/profile/profile";
 import Lastsearch from "./components/lastSearch/lastSearch";
 import Bookmarked from "./components/bookmarked/bookmarked";
 import Sidebar from "./components/sidebar/sidebar";
+import "./app.css";
 //====================================================
 const App = () => {
   return (
     <>
-      <div className="container-floid">
+      <div className="container-floid Main">
         <div className="row">
           <Navbar />
         </div>
         <div className="row align-items-center ">
-          <div className="col col-lg-4 col-xl-3 col-xxl-3  d-none d-lg-block ">
+          <div className="col col-lg-4 col-xl-3 col-xxl-3  d-none d-lg-block Sidebar ">
             <Sidebar />
           </div>
-          <div className="col col-lg-8  text-center bg-success ">
+          <div className="col col-lg-8  text-center  components  ">
             <Routes>
               <Route exaxt path="/search" element={<Search />} />
               <Route exaxt path="/agents" element={<Agents />} />

@@ -22,7 +22,7 @@ const Sidebar = () => {
             <img src={require("./../../media/logo.png")} alt="" />
           </div>
           <div className="title mt-2">
-            <h3 className="text-center">املاک هاشمی نسب</h3>
+            <h3 className="text-center title">املاک هاشمی نسب</h3>
             <hr />
           </div>
           <div className="star">

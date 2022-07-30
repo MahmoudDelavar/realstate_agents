@@ -5,10 +5,22 @@
 }
 
 .sidebar {
-  background: rgb(18, 156, 248);
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   justify-content: center;
   padding: 0;
-  border-radius: 20px;
 }
 .logo {
   z-index: 1;
@@ -24,7 +36,7 @@
 
 .s-li {
   /* background-color: rebeccapurple; */
-  height: 90px;
+  height: 80px;
   width: 100%;
   margin: 3px;
   padding-right: 50px;
@@ -36,11 +48,11 @@
 .s-text {
   margin-right: 5px;
   font-size: 20px;
-  color: aliceblue;
+  color: #619d94;
 }
 .s-icon {
-  font-size: 30px;
-  color: aliceblue;
+  font-size: 25px;
+  color: #619d94;
 }
 .s-link {
   text-decoration: none;
@@ -48,7 +60,7 @@
   width: 100%;
   padding-right: 5px;
   /* background-color: rgba(240, 248, 255, 0.137); */
-  margin-top: 12px;
+  margin-top: 15px;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -56,34 +68,40 @@
 }
 
 ul li .s-link:hover {
-  background-color: rgba(246, 250, 253, 0.856);
+  color: #00acfc;
   transition: 0.5s;
 }
 
 ul li .s-link:focus .s-icon {
-  color: rgb(0, 75, 187);
+  color: rgb(199, 183, 120);
   transform: translateX(10px);
 }
 ul li .s-link:focus .s-text {
-  color: rgb(0, 75, 187);
+  color: rgb(199, 183, 120);
+
   transform: translateX(10px);
 }
 ul li .s-link:focus {
-  background-color: rgb(255, 255, 255);
-  transform: translateX(-30px);
+  background-color: #1a3039;
+  transform: translateX(-22px);
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
+  transition: 0.8s;
 }
 
 ul li .s-link:hover .s-text {
-  color: black;
+  color: rgb(148, 124, 20);
 }
 
 ul li .s-link:hover .s-icon {
-  color: black;
+  color: rgb(148, 124, 20);
 }
 
 ul li .s-link:not(:focus) {
   transition: 0.8s;
   transform: translateX(0px);
+}
+
+.title {
+  color: #6c7506;
 }
