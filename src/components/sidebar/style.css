@@ -1,42 +1,89 @@
-.sidebar {
-  background: #5caffd;
-}
-img {
-  max-width: 30px;
-  height: 170px;
-}
-li {
-  list-style: none;
-}
-.s-list {
-  padding: 3px;
-  margin-top: 40px;
-  border-radius: 15px;
-  width: 100%;
-}
-.s-icon {
-  font-size: 2rem;
-  transition: 0.5s;
-  color: whitesmoke;
-}
-
-.s-text {
-  color: whitesmoke;
-  position: absolute;
-  font-weight: 400;
-  font-size: 1.1rem;
-  margin-top: 15px;
-  margin-right: 5px;
-}
-
-.s-list:hover {
-  background: rgb(173, 121, 121);
-  transition: 0.5s;
-  color: black;
-}
-
 .star {
   text-align: center;
   color: rgb(255, 136, 0);
   font-size: 30px;
+}
+
+.sidebar {
+  background: rgb(18, 156, 248);
+  justify-content: center;
+  padding: 0;
+  border-radius: 20px;
+}
+.logo {
+  z-index: 1;
+  padding: 0;
+}
+
+.s-ul {
+  list-style: none;
+  /* background-color: beige; */
+  padding: 0;
+  margin: 0;
+}
+
+.s-li {
+  /* background-color: rebeccapurple; */
+  height: 90px;
+  width: 100%;
+  margin: 3px;
+  padding-right: 50px;
+  border-bottom: 1px solid whitesmoke;
+  justify-content: center;
+  justify-content: center;
+  position: relative;
+}
+.s-text {
+  margin-right: 5px;
+  font-size: 20px;
+  color: aliceblue;
+}
+.s-icon {
+  font-size: 30px;
+  color: aliceblue;
+}
+.s-link {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  padding-right: 5px;
+  /* background-color: rgba(240, 248, 255, 0.137); */
+  margin-top: 12px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+ul li .s-link:hover {
+  background-color: rgba(246, 250, 253, 0.856);
+  transition: 0.5s;
+}
+
+ul li .s-link:focus .s-icon {
+  color: rgb(0, 75, 187);
+  transform: translateX(10px);
+}
+ul li .s-link:focus .s-text {
+  color: rgb(0, 75, 187);
+  transform: translateX(10px);
+}
+ul li .s-link:focus {
+  background-color: rgb(255, 255, 255);
+  transform: translateX(-30px);
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+ul li .s-link:hover .s-text {
+  color: black;
+}
+
+ul li .s-link:hover .s-icon {
+  color: black;
+}
+
+ul li .s-link:not(:focus) {
+  transition: 0.8s;
+  transform: translateX(0px);
 }

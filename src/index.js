@@ -5,6 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 import "./fonts/Yekan.ttf";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Sidebar from "./components/sidebar/sidebar";
+import "./index.css";
 
 //==========================================
 ReactDOM.render(

@@ -7,7 +7,6 @@ import Profile from "./components/profile/profile";
 import Lastsearch from "./components/lastSearch/lastSearch";
 import Bookmarked from "./components/bookmarked/bookmarked";
 import Sidebar from "./components/sidebar/sidebar";
-
 //====================================================
 const App = () => {
   return (
@@ -17,10 +16,10 @@ const App = () => {
           <Navbar />
         </div>
         <div className="row align-items-center ">
-          <div className="col col-lg-4 col-xl-3 col-xxl-3  d-none d-lg-block">
+          <div className="col col-lg-4 col-xl-3 col-xxl-3  d-none d-lg-block ">
             <Sidebar />
           </div>
-          <div className="col col-lg-8  text-center ">
+          <div className="col col-lg-8  text-center bg-success ">
             <Routes>
               <Route exaxt path="/search" element={<Search />} />
               <Route exaxt path="/agents" element={<Agents />} />
