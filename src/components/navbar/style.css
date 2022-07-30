@@ -13,19 +13,19 @@
   justify-content: center;
   align-items: flex-start;
   min-height: 100px;
-  background-color: aliceblue;
 }
 
 .navbar {
   margin-top: 40px;
   position: relative;
-  width: 95%;
+  width: 100%;
   height: 110px;
-  background: rgb(91, 157, 243);
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
+  background-color: rgb(130, 134, 138);
+  border-top-left-radius: 90px;
+  border-bottom-right-radius: 90px;
 }
 
 .navbar ul {
@@ -65,14 +65,15 @@
 
 .navbar ul li.active .link .icon {
   transform: translateY(-35px);
+  color: rgb(255, 255, 255);
 }
 
 .navbar ul li .link .text {
-  margin-top: 10px;
+  margin-top: 30px;
   position: absolute;
-  color: whitesmoke;
-  font-weight: 400;
-  font-size: 1.1rem;
+  color: rgb(216, 118, 53);
+  font-weight: 500;
+  font-size: 18px;
   letter-spacing: 0.05em;
   transition: 0.5s;
   opacity: 0;
@@ -92,7 +93,7 @@
   height: 80px;
   background-color: rgb(216, 118, 53);
   border-radius: 50px;
-  border: 6px solid whitesmoke;
+  border: 6px solid #203a43;
   transition: 0.5s;
 }
 

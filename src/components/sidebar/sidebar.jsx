@@ -19,7 +19,7 @@ const Sidebar = () => {
         <div className="row sidebar">
           <div className="content"></div>
           <div className="row logo">
-            <img src={require("./../../media/logo.png")} alt="" />
+            <img src={require("./../../media/sidebarLogo.png")} alt="" />
           </div>
           <div className="title mt-2">
             <h3 className="text-center title">املاک هاشمی نسب</h3>
